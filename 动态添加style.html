@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><a href="javascript:;">wocaonimabi</a></h1>
+    <script>
+        var nod = document.createElement('style');
+            console.log(nod);
+            nod.className='fuck';
+            str = 'body{background:#000;color:#fff} a{color:#fff;text-decoration:none;} a:hover{color:red;text-decoration:underline}';
+            nod.type = 'text/css';
+        if (nod.styleSheet) { //ie下  
+            nod.styleSheet.cssText = str;
+        } else {
+            nod.innerHTML = str; //或者写成 nod.appendChild(document.createTextNode(str))  
+        }
+        document.getElementsByTagName('head')[0].appendChild(nod);
+        var nod1 = document.createElement('style');
+            console.log(nod1);
+            nod1.className='fuck1';
+            str = 'body{background:#0a0;color:#ccc} a{color:#0a0;text-decoration:none;} a:hover{color:yellow;text-decoration:underline}';
+            nod1.type = 'text/css';
+        if (nod1.styleSheet) { //ie下  
+            nod1.styleSheet.cssText = str;
+        } else {
+            nod1.innerHTML = str; //或者写成 nod.appendChild(document.createTextNode(str))  
+        }
+        document.getElementsByTagName('head')[0].appendChild(nod1);
+    </script>
+
+</body>
+
+</html>
